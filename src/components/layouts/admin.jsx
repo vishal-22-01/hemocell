@@ -1,5 +1,4 @@
-import React from "react";
-import { Route, Routes, Navigate, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 import Sidebar from "../sidebar/sidebar";
 // import HeaderStats from "../sections/header-stats/header_stats";
@@ -12,16 +11,16 @@ import Sidebar from "../sidebar/sidebar";
 // import AdminNeedHelp from "../views/admin/admin-need-help";
 
 export default function Admin() {
-	return (
-		<>
-			<Sidebar />
-			<div className="relative md:ml-64 bg-off_white outline">
-				{/* <AdminNavbar /> */}
-				{/* Header */}
-				{/* <HeaderStats /> */}
-				<div className="w-full h-full mx-auto bg-off_white">
-					<Outlet />
-					{/* <Routes>
+  return (
+    <>
+      <Sidebar />
+      <div className="relative md:ml-64 bg-off_white outline">
+        {/* <AdminNavbar /> */}
+        {/* Header */}
+        {/* <HeaderStats /> */}
+        <div className="w-full h-full mx-auto bg-off_white">
+          <Outlet />
+          {/* <Routes>
 						<Route path="/" exact element={<Dashboard />} />
 						<Route
 							path="donate-blood"
@@ -45,9 +44,9 @@ export default function Admin() {
 						/>
 						<Route path="/redirect" element={<Navigate to="/" />} />
 					</Routes> */}
-					{/* <FooterAdmin /> */}
-				</div>
-			</div>
-		</>
-	);
+          {/* <FooterAdmin /> */}
+        </div>
+      </div>
+    </>
+  );
 }

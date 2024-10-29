@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import BlackLogo from "../../../../public/HemoCell Logo black.png";
 import WhiteLogo from "../../../../public/HemoCell Logo White.png";
@@ -10,7 +10,7 @@ import WhiteLogo from "../../../../public/HemoCell Logo White.png";
 const navigation = [
 	{ name: "Home", href: "/" },
 	{ name: "Host Blood Drive", href: "/host-blood-drive" },
-	{ name: "Donate Money", href: "https://donorbox.org/donate-money-11" },
+	// { name: "Donate Money", href: "https://donorbox.org/donate-money-11" },
 	{ name: "Help Needed", href: "/contact" },
 	{ name: "Need Blood", href: "/need-blood", secondLast: true },
 	{ name: "Donate Blood", href: "/donate-blood", last: true },
@@ -21,7 +21,7 @@ const compnayName = "HemoCell Blood Bank";
 
 const HeaderComponent = () => {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-	const [offset, setOffset] = useState(0);
+	const [ setOffset] = useState(0);
 	const [blurActivation, setBlurActivation] = useState(false);
 	const [isActiveName, setIsActiveName] = useState(null);
 
