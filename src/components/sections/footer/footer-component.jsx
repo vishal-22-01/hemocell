@@ -45,7 +45,7 @@ const FooterComponent = () => {
 		},
 		{
 			title: "India",
-			link: "",
+			link: "Punjab",
 		},
 		{
 			title: "Open 24/7",
